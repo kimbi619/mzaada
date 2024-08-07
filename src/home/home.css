@@ -1,0 +1,426 @@
+.hero-section {
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+  
+.hero-content {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary-color), var(--main-color));
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-block: 3rem;
+}
+  
+.text-content {
+    color: white;
+    max-width: 80%;
+}
+  
+.text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+  
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+  
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta-button.secondary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-block: 1rem 2rem;
+}
+
+.hero-image {
+    display: none;
+}
+
+
+/* ======= WHAT WE DO SECTION  */
+.WhatWeDoSection {
+    width: 90%;
+    max-width: 80rem;
+    text-align: center;
+    margin: auto;
+    padding-block: 3rem;
+}
+
+.blog_section h2,
+.landing_page_location_section h2,
+.WhatWeDoSection h2 {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+.WhatWeDoSection p {
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 40rem;
+}
+
+/* ========== LOCATION SECTION  */
+.landing_page_location_section {
+    text-align: center;
+}
+.location_google_map {
+    width: 100%;
+    height: 40rem;
+    margin-top: 3rem;
+    /* background: url('../assets/static_map.png') no-repeat center center; */
+}
+
+/* ======= ABOUT */
+.landing_page_about_us_section {
+    background: linear-gradient(var(--secondary-color), var(--main-color));
+    padding: 50px 0;
+}
+
+.landing_page_about_us_section * {
+    color: white;
+}
+
+
+.about_contact_form {
+    margin-top: 5rem;
+}
+.landing_page_about_us_section .list_text {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.contact_input {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.contact_input input {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    padding-left: 1.1rem;
+    font-weight: 500;
+}
+.submit_home_contact_form {
+    background-color: var(--gray);
+    color: white !important;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.submit_home_contact_form:hover {
+    background-color: var(--main-color);
+}
+
+
+
+/* ========= PARTNERS SECTION   */
+.partner-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .partner-slider-container {
+    overflow: hidden;
+  }
+  
+  .partner-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .partner-slide {
+    flex: 0 0 calc(100% / 6);
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .partner-slide:last-child {
+    border-right: none;
+  }
+  
+  .partner-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .partner-slide {
+      flex: 0 0 calc(100% / 4);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .partner-slide {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-slide {
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+
+
+/* ========== BLOG SECTION  */
+
+.blog_section {
+    background: linear-gradient(to right, var(--secondary-color), var(--main-color));
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.blog_section h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.blog_flex_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 80%;
+    margin: 2rem auto ;
+}
+.blog_card {
+    width: 30%;
+    border-radius: 17px;
+    background: #54010b59;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+.blog_item_title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-block: 1rem 0.9rem;
+}
+.blog_item_description {
+    color: #fff;
+    font-size: 1rem;
+    margin-block: 1rem;
+    font-weight: 500;
+    width: 90%;
+    margin-inline: auto;
+}
+.read_more_blog_link {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-decoration: none;
+    margin-block: 1rem 0.9rem;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+
+/* ========= ADVERTISEMENT SECTION  */ */
+/* ========= ADVERTISEMENT SECTION  */
+.advertisement-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.advertisement-slider-container {
+    overflow: hidden;
+    max-width: 900px;  /* Reduce the overall size */
+    margin: 0 auto;    /* Center the container */
+}
+
+.advertisement-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.advertisement-slide {
+    flex: 0 0 100%;
+    display: flex;
+    background: linear-gradient(85deg, var(--secondary-color), var(--main-color));
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;  /* Set a fixed height */
+}
+
+.ad-image {
+    flex: 0 0 40%;
+    padding: 20px;
+}
+
+.ad-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.ad-content {
+    flex: 0 0 60%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;  /* Reduced font size */
+    text-align: center;
+    font-weight: 800;
+}
+
+.ad-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.ad-nav-button.prev {
+    left: 10px;
+}
+
+.ad-nav-button.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .advertisement-slide {
+        flex-direction: column;
+        height: auto;  /* Allow height to adjust */
+    }
+
+    .ad-image, .ad-content {
+        flex: 0 0 auto;  /* Allow flexible sizing */
+    }
+
+    .ad-image {
+        height: 200px;  /* Set a fixed height for the image */
+    }
+
+    .ad-content {
+        padding: 20px;
+        font-size: 1rem;  /* Further reduce font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .advertisement-slider-container {
+        max-width: 100%;  /* Full width on very small screens */
+    }
+
+    .ad-image {
+        height: 150px;  /* Reduce image height further for very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 60rem) {
+    .about_section_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about_contact_form {
+        width: 50%;
+        padding: 5rem;
+    }
+    .hero-section {
+        height: 60vh;
+    }
+    .hero-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+    }
+    .hero-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url('../assets/landing_image.png');
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .cta-button.secondary {
+        margin-block: 0px;
+    }
+    .hero-image {
+        display: block;
+    }
+    
+}

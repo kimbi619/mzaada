@@ -229,9 +229,12 @@
     margin-top: 2rem;
     width: 80%;
     margin: 2rem auto ;
+    flex-wrap: wrap;
+    max-width: 80rem;
 }
 .blog_card {
-    width: 30%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 17px;
     background: #54010b59;
     margin-bottom: 1rem;
@@ -249,7 +252,7 @@
 .blog_item_description {
     color: #fff;
     font-size: 1rem;
-    margin-block: 1rem;
+    margin-block: 1.3rem;
     font-weight: 500;
     width: 90%;
     margin-inline: auto;
@@ -263,6 +266,28 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-weight: 500;
+}
+.three_dots {
+    display: block;
+    height: 20px;
+    width: 80px;
+    margin-inline: auto;
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.three_dots span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--secondary-color);
+    background: #fff;
+    margin-block: 0.5rem;
+    border-radius: 50%;
+}
+.three_dots span:nth-child(2) {
+    background: var(--main-color);
+    border: 1px solid #fff;
 }
 
 

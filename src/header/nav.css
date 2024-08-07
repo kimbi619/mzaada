@@ -110,6 +110,7 @@
     padding: 0.5rem;
     font-size: 0.85em;
     transition: all .3s ease;
+    z-index: 111;
 }
 .language_drop_container .nav_link_n:hover + .language_dropdown_n, .language_dropdown_n:hover{
     height: auto;

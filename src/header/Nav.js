@@ -163,7 +163,7 @@ const Nav = () => {
                   <NavLink className='nav_link_n' to = '/contacts' >Contacts</NavLink>
                 </li>
                   <li className='nav_list_n language_drop_container'>
-                    <NavLink className='nav_link_n' >FR</NavLink>
+                    <NavLink className='nav_link_n' >FR <span  className={`flag-icon flag-icon-gb`}/> / <span className={`flag-icon flag-icon-fr`}/></NavLink>
                     <div className='language_dropdown_n'>
                         <ul>
                         {

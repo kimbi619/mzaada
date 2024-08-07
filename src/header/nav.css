@@ -38,7 +38,18 @@
     padding-block: 1.5rem;
 }
 
-
+.nav_list_n_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 3rem;
+}
+.nav_list_n {
+    padding-right: 1rem;
+}
 
 .non_user_nav .burger {
     position: absolute;

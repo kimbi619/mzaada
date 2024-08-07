@@ -4,7 +4,7 @@ import './Footer.css'
 import {  FaFacebookF, FaInstagram } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedinIn } from 'react-icons/fa6';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo_footer.png'
 
 const Footer = () => {
   

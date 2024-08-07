@@ -230,11 +230,11 @@
     width: 80%;
     margin: 2rem auto ;
     flex-wrap: wrap;
-    max-width: 80rem;
+    max-width: 75rem;
 }
 .blog_card {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     border-radius: 17px;
     background: #54010b59;
     margin-bottom: 1rem;
@@ -376,7 +376,7 @@
     }
 
     .ad-image {
-        height: 200px;  /* Set a fixed height for the image */
+        height: 300px;  /* Set a fixed height for the image */
     }
 
     .ad-content {
@@ -391,7 +391,7 @@
     }
 
     .ad-image {
-        height: 150px;  /* Reduce image height further for very small screens */
+        height: 250px;  /* Reduce image height further for very small screens */
     }
 }
 

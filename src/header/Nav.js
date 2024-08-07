@@ -115,9 +115,23 @@ const Nav = () => {
                 </span>
               </motion.span>
               <div className={`mobile_nav_n ${showNav ? 'showNavN' : 'unclip'}`} >
-                <li className='nav_list_n'>
-                  <NavLink className='nav_link_n' to = '/ebooks?auth=false' >Home page</NavLink>
-                </li>
+                <ul className='nav_list_n_wrapper' onClick={handleRemoveNav}>
+                  <li className='nav_list_n'>
+                    <NavLink className='nav_link_n' to = '/' >Accueil</NavLink>
+                  </li>
+                  <li className='nav_list_n'>
+                    <NavLink className='nav_link_n' to = '/propos' >A Propos</NavLink>
+                  </li>
+                  <li className='nav_list_n'>
+                    <NavLink className='nav_link_n' to = '/services' >Nos Services</NavLink>
+                  </li>
+                  <li className='nav_list_n'>
+                    <NavLink className='nav_link_n' to = '/prestataires' >Les Prestataires</NavLink>
+                  </li>
+                  <li className='nav_list_n'>
+                    <NavLink className='nav_link_n' to = '/contacts' >Contacts</NavLink>
+                  </li>
+                </ul>
               </div>
 
           </div>
